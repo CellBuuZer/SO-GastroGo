@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  frontend:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
