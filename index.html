@@ -3,30 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Management</title>
+    <title>GastroGo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Restaurant Management</h1>
+    <h1>GastroGo Restaurant Management</h1>
 
-    <!-- Restaurant Form -->
-    <div id="restaurantForm">
-        <h2>Add Restaurant</h2>
-        <form id="addRestaurantForm">
-            <input type="text" id="name" placeholder="Restaurant Name" required><br>
-            <input type="text" id="address" placeholder="Address" required><br>
-            <input type="text" id="phone" placeholder="Phone" required><br>
-            <input type="text" id="email" placeholder="Email" required><br>
-            <input type="text" id="cuisine" placeholder="Cuisine Type" required><br>
-            <input type="number" id="rating" placeholder="Rating (0-5)" min="0" max="5" required><br>
-            <button type="submit">Add Restaurant</button>
+    <!-- Login Section -->
+    <div id="loginSection">
+        <h2>Login</h2>
+        <form id="loginUserForm">
+            <input type="email" id="loginEmail" placeholder="Email" required><br>
+            <input type="password" id="loginPassword" placeholder="Password" required><br>
+            <button type="submit">Login</button>
         </form>
+        <p id="loginError" style="color: red;"></p>
     </div>
 
-    <!-- Restaurant List -->
-    <div id="restaurantList">
-        <h2>Restaurant List</h2>
-        <ul id="restaurants"></ul>
+    <!-- Restaurant Management (Dashboard) -->
+    <div id="dashboard" style="display: none;">
+        <!-- Restaurant Form -->
+        <div id="restaurantForm">
+            <h2>Add Restaurant</h2>
+            <form id="addRestaurantForm">
+                <input type="text" id="name" placeholder="Restaurant Name" required><br>
+                <input type="text" id="address" placeholder="Address" required><br>
+                <input type="text" id="phone" placeholder="Phone" required><br>
+                <input type="text" id="email" placeholder="Email" required><br>
+                <input type="text" id="cuisine" placeholder="Cuisine Type" required><br>
+                <input type="number" id="rating" placeholder="Rating (0-5)" min="0" max="5" required><br>
+                <button type="submit">Add Restaurant</button>
+            </form>
+        </div>
+
+        <!-- Restaurant List -->
+        <div id="restaurantList">
+            <h2>Restaurant List</h2>
+            <ul id="restaurants"></ul>
+        </div>
+        <button id="logoutButton" style="background-color: red; color: white;">Logout</button>
     </div>
 
     <script src="script.js"></script>

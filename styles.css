@@ -1,24 +1,38 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-image: url('restaurant-background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 h1, h2 {
     color: #333;
+    text-align: center;
 }
 
-#restaurantForm input {
-    margin: 5px;
-    padding: 8px;
-    width: 200px;
+#loginSection, #dashboard {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
 }
 
 button {
-    padding: 10px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
@@ -35,4 +49,5 @@ li {
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
